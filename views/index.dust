@@ -1,0 +1,76 @@
+<head>
+	<title>{title}</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/css/page.css">
+</head>
+<body>
+	<div id="loginbox" class="mainbox col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-1 margin_top_50">                    
+    <div class="panel panel-info" >
+        <div class="panel-heading">
+            <div class="panel-title">Please enter contact details</div>
+        </div>     
+        <div class="panel-body padding-top-30" >
+            
+            <form class="form-horizontal" method="post">
+			  <div class="form-group">
+			    <label for="first_name" class="col-sm-4 control-label">First Name</label>
+			    <div class="col-sm-8">
+			      <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name"/>
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+			    <label for="last_name" class="col-sm-4 control-label">Last Name</label>
+			    <div class="col-sm-8">
+			      <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name" value="" data-notfound='default' />
+			    </div>
+			  </div> 
+
+			  <div class="form-group">
+			    <label for="mobile_number"  class="col-sm-4 control-label">Mobile Phone</label>
+			    <div class="col-sm-8">
+			      <input type="text" name="mobile_number" id="mobile_number" class="form-control" placeholder="Mobile Number"/>
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+			    <label for="home_number"  class="col-sm-4 control-label">Home Number</label>
+			    <div class="col-sm-8">
+			      <input type="text" name="home_number" id="home_number" class="form-control" placeholder="Mobile Number"/>
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+			    <label for="email"  class="col-sm-4 control-label">Email</label>
+			    <div class="col-sm-8">
+			      <input type="text" id="email" name="email" class="form-control" placeholder="Email"/>
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+			    <label for="address"  class="col-sm-4 control-label">Address</label>
+			    <div class="col-sm-8">
+			    	<textarea name="address" id="address"  class="form-control" rows="5" placeholder="Address"></textarea>
+			    </div>
+			  </div>
+
+			  <div class="form-group">
+			    <div class="col-sm-6 col-md-offset-3">
+			      <button type="submit" class="btn btn-primary btn-block">Save</button>
+			    </div>
+			  </div>
+            </form>  
+        </div> 
+        {#contacts}
+        	Name: {name}
+        	Mobile Phone: {mobile_number}
+        	Home Phone: {home_phone}
+        	Email: {email}
+        	Address: {address} <br>
+        {/contacts}                    
+    </div>  
+</div>
+</body>
+</html>
+
+    
